@@ -8,8 +8,13 @@ export default createGlobalStyle`
   text-decoration: none;
   list-style: none;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
+
+  -webkit-font-smoothing: antialiased;
+
+  background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+  color: ${({theme}) => theme.COLORS.WHITE};
 }
 
 :root{
