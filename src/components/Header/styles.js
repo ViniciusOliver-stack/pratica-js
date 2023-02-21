@@ -4,7 +4,6 @@ export const Container = styled.header`
   width: 100%;
   padding: 14.5px 64px;
 
-
   > section {
     display: flex;
     align-items: center;
