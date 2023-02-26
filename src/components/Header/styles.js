@@ -28,10 +28,10 @@ export const Container = styled.header`
 
     > nav {
       display: flex;
-      gap: 1rem;
+      gap: 1.6rem;
 
       a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 500;
         position: relative;
         &:before {
@@ -41,7 +41,7 @@ export const Container = styled.header`
           position: absolute;
           width: 0%;
           height: 2px;
-          background: #3ca63a;
+          background: ${({theme}) => theme.COLORS.YELLOW};
           transition: 0.3s;
         }
 

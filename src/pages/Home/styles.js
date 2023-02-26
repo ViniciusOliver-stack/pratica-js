@@ -45,15 +45,14 @@ export const Section = styled.section`
 export const About = styled.div`
   width: 90%;
   margin: 0 auto;
-  
 
-  #about-wrapper{
+  #about-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 3rem;
 
-    .about{
-      background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+    .about {
+      background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
       border-radius: 15px;
 
       display: flex;
@@ -66,20 +65,33 @@ export const About = styled.div`
 
       padding: 1.4rem;
 
-      .about-title{
-        color: ${({theme}) => theme.COLORS.YELLOW};
+      .about-title {
+        color: ${({ theme }) => theme.COLORS.YELLOW};
         font-weight: 600;
       }
 
-      img { 
+      img {
         width: 42px;
       }
 
-      p, img{
+      p,
+      img {
         background: transparent;
       }
     }
   }
+`
 
+export const Cards = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+  gap: 3rem;
 
+  width: 90%;
+  margin: 6rem auto;
+
+  @media (min-width: 320px) and (max-width: 425px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+  }
 `
