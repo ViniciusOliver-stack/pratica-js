@@ -1,23 +1,42 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 412px; 
-  height: 600px;
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-  border-radius: 6px;
-
-
-  img, p, div{
+  * {
     background-color: transparent;
   }
 
-  .card{
-    position: relative;
-    height: 100%;
+  max-width: 412px;
+  height: 600px;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  border-radius: 6px;
+
+  .links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: none;
+
+    > ul li svg {
+      font-size: 3rem;
+      display: flex;
+      margin-top: 1rem;
+    }
   }
 
-  .top{
-    img{
+  .card {
+    position: relative;
+    height: 100%;
+    &:hover {
+      cursor: pointer;
+      .links {
+        display: flex;
+      }
+    }
+  }
+
+  .top {
+    img {
       width: 100%;
       height: 250px;
       background-position: left top;
@@ -26,44 +45,42 @@ export const Container = styled.div`
     }
   }
 
-  .info-wrapper{
+  .info-wrapper {
     padding: 1rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 
-
-    .name-project{
+    .name-project {
       font-size: 2.8rem;
       font-weight: 600;
     }
 
-    .description-project{
+    .description-project {
       font-size: 1.4rem;
       line-height: 2.4rem;
-
     }
 
-    .footer-wrapper{
+    .footer-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .easy{
-        border: 2px solid ${({theme}) => theme.COLORS.COLOR_EASY};
+      .easy {
+        border: 2px solid ${({ theme }) => theme.COLORS.COLOR_EASY};
       }
 
-      .medium{
-        border: 2px solid ${({theme}) => theme.COLORS.COLOR_MEDIUM};
+      .medium {
+        border: 2px solid ${({ theme }) => theme.COLORS.COLOR_MEDIUM};
       }
 
-      .hard{
-        border: 2px solid ${({theme}) => theme.COLORS.COLOR_HARD};
+      .hard {
+        border: 2px solid ${({ theme }) => theme.COLORS.COLOR_HARD};
       }
 
       .easy,
       .medium,
-      .hard{
+      .hard {
         border-radius: 6rem;
         width: auto;
         padding: 0 1rem;
@@ -76,7 +93,7 @@ export const Container = styled.div`
       }
     }
 
-    .footer-wrapper{
+    .footer-wrapper {
       position: absolute;
       bottom: 20px;
 
@@ -87,6 +104,4 @@ export const Container = styled.div`
       justify-content: space-between;
     }
   }
-
-  
 `

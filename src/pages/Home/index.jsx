@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import logoImg from '../../images/logo.png';
 import { Header } from '../../components/Header'
 import { NavBar } from '../../components/Navbar'
 import { Card } from '../../components/Card'
-import { Container, Section, About, Cards } from './styles'
+import { Container, Section, About, Cards, Footer } from './styles'
 import trophyImg from '../../images/trophy.svg'
 import medalImg from '../../images/medal.svg'
 import computerImg from '../../images/computer.svg'
@@ -90,6 +91,24 @@ export function Home() {
             level="Profissional"
           />
         </Cards>
+
+        <div className="more-projects">
+          <a href="#">Veja mais projetos</a>
+        </div>
+
+        <Footer>
+          <section>
+          <div className="logo">
+            <img src={logoImg} alt="Logo"/>
+            <p>Prática JS</p>
+          </div>
+          <nav>
+            <a href="#">Colaboradores</a>
+            <a href="#">Sobre</a>
+          </nav>
+        </section>
+        </Footer>
+
       </Container>
     </>
   )

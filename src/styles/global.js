@@ -21,4 +21,14 @@ export default createGlobalStyle`
   font-size: 62.5%;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: ${({theme}) => theme.COLORS.YELLOW};    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 `

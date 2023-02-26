@@ -1,6 +1,29 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  .more-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > a {
+      border: 2px solid ${({ theme }) => theme.COLORS.YELLOW};
+
+      padding: 1rem 2rem;
+      border-radius: 6rem;
+      margin-bottom: 3rem;
+
+
+      &:hover{
+        transition: all .2s ease-in;
+
+        background-color: ${({ theme }) => theme.COLORS.YELLOW};
+        color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+        font-weight: 600;
+      }
+    }
+  }
+`
 
 export const Section = styled.section`
   width: 90%;
@@ -92,6 +115,75 @@ export const Cards = styled.section`
 
   @media (min-width: 320px) and (max-width: 425px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+`
 
+export const Footer = styled.footer`
+  padding: 14.5px 64px;
+
+  > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 42px;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    > nav {
+      display: flex;
+      gap: 1.6rem;
+
+      a {
+        font-size: 1.8rem;
+        font-weight: 500;
+        position: relative;
+        &:before {
+          content: '';
+          border-radius: 50px;
+          bottom: 0px;
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          background: ${({ theme }) => theme.COLORS.YELLOW};
+          transition: 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    > svg {
+      cursor: pointer;
+    }
+
+    .mobile {
+      display: none;
+    }
+    @media (max-width: 900px) {
+      .mobile {
+        display: initial;
+      }
+      > nav {
+        display: none;
+      }
+    }
   }
 `
