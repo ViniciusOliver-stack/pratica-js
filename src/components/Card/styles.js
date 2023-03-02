@@ -6,7 +6,7 @@ export const Container = styled.div`
   }
 
   max-width: 412px;
-  height: 600px;
+  height: 650px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   border-radius: 6px;
 
@@ -18,7 +18,7 @@ export const Container = styled.div`
     display: none;
 
     > ul li svg {
-      font-size: 3rem;
+      font-size: 2.6rem;
       display: flex;
       margin-top: 1rem;
     }

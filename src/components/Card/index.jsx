@@ -1,4 +1,4 @@
-import { Container } from './styles.js'
+import { Container } from './styles'
 import {
   AiOutlineLink,
   AiOutlineCodepen,
@@ -11,7 +11,7 @@ export function Card({
   description,
   techs,
   classLevel,
-  level
+  level,
 }) {
   const imgRound = 'https://source.unsplash.com/random/?city,night'
 

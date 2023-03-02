@@ -12,13 +12,15 @@ export default createGlobalStyle`
   font-size: 1.6rem;
 
   -webkit-font-smoothing: antialiased;
-
-  background: ${({theme}) => theme.COLORS.BACKGROUND_900};
-  color: ${({theme}) => theme.COLORS.WHITE};
 }
 
 :root{
   font-size: 62.5%;
+}
+
+body{
+  background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+  color: ${({theme}) => theme.COLORS.WHITE};
 }
 
 body::-webkit-scrollbar {

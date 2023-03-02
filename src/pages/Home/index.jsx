@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logoImg from '../../images/logo.png';
+import logoImg from '../../images/logo.png'
 import { Header } from '../../components/Header'
 import { NavBar } from '../../components/Navbar'
 import { Card } from '../../components/Card'
@@ -65,7 +65,7 @@ export function Home() {
 
         <Cards>
           <Card
-          imgLink='https://i.imgur.com/hAIa35t.png'
+            imgLink="https://i.imgur.com/hAIa35t.png"
             nameProject="FocusPomo"
             description="A FocusPomo é uma aplicação que utiliza a técnica Pomodoro para ajudar os usuários a gerenciar melhor seu tempo e aumentar sua produtividade. A técnica Pomodoro consiste em trabalhar em blocos de tempo de 25 minutos, seguidos por uma pausa de 5 minutos. "
             techs="HTML • CSS • JavaScript"
@@ -74,7 +74,7 @@ export function Home() {
           />
 
           <Card
-          imgLink='https://i.imgur.com/x4NRqFt.png'
+            imgLink="https://i.imgur.com/x4NRqFt.png"
             nameProject="Cronômetro"
             description="É uma aplicação de medição de tempo que é usada para medir a duração de eventos ou atividades específicas. Podendo ser amplamente variada tornando-os uma ferramenta essencial para medir e gerenciar o tempo em muitas situações diferentes."
             techs="HTML • CSS • JavaScript"
@@ -83,7 +83,7 @@ export function Home() {
           />
 
           <Card
-          imgLink='https://i.imgur.com/FizMsCy.png'
+            imgLink="https://i.imgur.com/FizMsCy.png"
             nameProject="CountDown"
             description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
             techs="HTML • CSS • JavaScript"
@@ -98,17 +98,16 @@ export function Home() {
 
         <Footer>
           <section>
-          <div className="logo">
-            <img src={logoImg} alt="Logo"/>
-            <p>Prática JS</p>
-          </div>
-          <nav>
-            <a href="#">Colaboradores</a>
-            <a href="#">Sobre</a>
-          </nav>
-        </section>
+            <div className="logo">
+              <img src={logoImg} alt="Logo" />
+              <p>Prática JS</p>
+            </div>
+            <nav>
+              <a href="#">Colaboradores</a>
+              <a href="#">Sobre</a>
+            </nav>
+          </section>
         </Footer>
-
       </Container>
     </>
   )

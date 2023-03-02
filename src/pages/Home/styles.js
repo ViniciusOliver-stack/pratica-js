@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  .more-projects {
+
+  width: 90%;
+  margin: 6rem auto 1rem;
+
+  /* .more-projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,11 +26,11 @@ export const Container = styled.div`
         font-weight: 600;
       }
     }
-  }
+  } */
 `
 
 export const Section = styled.section`
-  width: 90%;
+  /* width: 90%;
   margin: 6rem auto;
 
   .presentation {
@@ -62,11 +66,11 @@ export const Section = styled.section`
         text-align: center;
       }
     }
-  }
+  } */
 `
 
 export const About = styled.div`
-  width: 90%;
+  /* width: 90%;
   margin: 0 auto;
 
   #about-wrapper {
@@ -102,11 +106,11 @@ export const About = styled.div`
         background: transparent;
       }
     }
-  }
+  } */
 `
 
 export const Cards = styled.section`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   gap: 3rem;
 
@@ -115,15 +119,17 @@ export const Cards = styled.section`
 
   @media (min-width: 320px) and (max-width: 425px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  }
+  } */
 `
 
 export const Footer = styled.footer`
-  padding: 14.5px 64px;
+  /* width: 90%;
+  margin: 0 auto;
 
-  > section {
+> section {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 
@@ -169,21 +175,8 @@ export const Footer = styled.footer`
         }
       }
     }
-
     > svg {
       cursor: pointer;
     }
-
-    .mobile {
-      display: none;
-    }
-    @media (max-width: 900px) {
-      .mobile {
-        display: initial;
-      }
-      > nav {
-        display: none;
-      }
-    }
-  }
+  } */
 `

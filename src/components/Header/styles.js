@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100%;
-  padding: 14.5px 64px;
+  padding: 0 0 2rem 0;
 
   > section {
     display: flex;
