@@ -4,6 +4,8 @@ import { Header } from '../../components/Header'
 import { NavBar } from '../../components/Navbar'
 import { Card } from '../../components/Card'
 import { Container, Section, About, Cards, Footer } from './styles'
+
+import { Player, Controls } from '@lottiefiles/react-lottie-player'
 import trophyImg from '../../images/trophy.svg'
 import medalImg from '../../images/medal.svg'
 import computerImg from '../../images/computer.svg'
@@ -19,9 +21,10 @@ export function Home() {
       />
       <Container>
         <Header setMenuIsVisible={setMenuIsVisible} />
-        <Section>
-          <div className="presentation">
+
+        <section>
             <h2>Olá, bem-vindo ao Prática JS 👋</h2>
+          <div className="presentation">
             <p>
               Esta procurando algum projeto mas não sabe qual projeto fazer ou
               por onde começar para treinar suas habilidades de HTML, CSS,
@@ -29,8 +32,20 @@ export function Home() {
               projetos pronto para você se inspirar e começar desenvolver os
               seus próprios projetos.
             </p>
+
+            <Player
+              autoplay
+              loop
+              src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json"
+              style={{ height: 'auto', width: '300px' }}
+            >
+              <Controls
+                visible={false}
+                buttons={['play', 'repeat', 'frame', 'debug']}
+              />
+            </Player>
           </div>
-        </Section>
+        </section>
 
         <About>
           <div id="about-wrapper">

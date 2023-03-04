@@ -23,6 +23,10 @@ body{
   color: ${({theme}) => theme.COLORS.WHITE};
 }
 
+a{
+  color: ${({theme}) => theme.COLORS.WHITE};
+}
+
 body::-webkit-scrollbar {
   width: 6px;               /* width of the entire scrollbar */
 }

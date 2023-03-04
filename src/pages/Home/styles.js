@@ -1,10 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-
   width: 90%;
-  margin: 6rem auto 1rem;
+  margin: 1rem auto;
 
+
+  > section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .presentation{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   /* .more-projects {
     display: flex;
     align-items: center;
