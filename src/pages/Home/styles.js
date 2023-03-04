@@ -4,20 +4,41 @@ export const Container = styled.div`
   width: 90%;
   margin: 1rem auto;
 
-
   > section {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .presentation{
+    margin: 3rem 0;
+
+    > h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .presentation {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      > p {
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
+        text-align: justify;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      .presentation {
+        flex-direction: column;
+        > p{
+          order: 1;
+        }
+        > svg{
+          order: 0;
+        }
+      }
     }
   }
-  /* .more-projects {
+  .more-projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +59,7 @@ export const Container = styled.div`
         font-weight: 600;
       }
     }
-  } */
+  }
 `
 
 export const Section = styled.section`
@@ -82,14 +103,11 @@ export const Section = styled.section`
 `
 
 export const About = styled.div`
-  /* width: 90%;
-  margin: 0 auto;
 
   #about-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 3rem;
-
     .about {
       background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
       border-radius: 15px;
@@ -112,32 +130,23 @@ export const About = styled.div`
       img {
         width: 42px;
       }
-
-      p,
-      img {
-        background: transparent;
-      }
     }
-  } */
+  }
 `
 
-export const Cards = styled.section`
-  /* display: grid;
+export const Cards = styled.div`
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   gap: 3rem;
 
-  width: 90%;
   margin: 6rem auto;
 
   @media (min-width: 320px) and (max-width: 425px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  } */
+  }
 `
 
 export const Footer = styled.footer`
-  /* width: 90%;
-  margin: 0 auto;
-
 > section {
     display: flex;
     align-items: center;
@@ -190,5 +199,5 @@ export const Footer = styled.footer`
     > svg {
       cursor: pointer;
     }
-  } */
+  }
 `

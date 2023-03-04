@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import logoImg from '../../images/logo.png'
+
+import { Player, Controls } from '@lottiefiles/react-lottie-player'
+
+import { Container, Section, About, Cards, Footer } from './styles'
+
 import { Header } from '../../components/Header'
 import { NavBar } from '../../components/Navbar'
 import { Card } from '../../components/Card'
-import { Container, Section, About, Cards, Footer } from './styles'
 
-import { Player, Controls } from '@lottiefiles/react-lottie-player'
 import trophyImg from '../../images/trophy.svg'
 import medalImg from '../../images/medal.svg'
 import computerImg from '../../images/computer.svg'
+import logoImg from '../../images/logo.png'
 
 export function Home() {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
@@ -71,11 +74,20 @@ export function Home() {
               <img src={computerImg} alt="" />
               <p className="about-title">---</p>
               <p>
-                Aqui você pode encontrar os melhores projetos para lhe inspirar
-                na hora da criação.
+              Inicie o desafio e baixe todos os arquivos iniciais. Fornecemos todos os arquivos que você precisará para concluir o desafio. Construí-lo depende de você!
+              </p>
+            </div>
+
+            <div className="about">
+              <img src={computerImg} alt="" />
+              <p className="about-title">---</p>
+              <p>
+              Publique sua solução na rede social para que todos vejam a sua evolução e obtenham feedback sobre seu código de outros desenvolvedores.
               </p>
             </div>
           </div>
+
+
         </About>
 
         <Cards>
