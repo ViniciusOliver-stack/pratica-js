@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { Player, Controls } from '@lottiefiles/react-lottie-player'
 
-import { Container, Section, About, Cards, Footer } from './styles'
+import { Container, About, Cards, Footer } from './styles'
 
 import { Header } from '../../components/Header'
 import { NavBar } from '../../components/Navbar'
