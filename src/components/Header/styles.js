@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100%;
+  margin: 4rem 0;
   padding: 0 0 2rem 0;
 
   > section {
@@ -16,12 +17,12 @@ export const Container = styled.header`
       gap: 1rem;
 
       img {
-        width: 42px;
+        width: 36px;
         border-radius: 10px;
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
       }
     }
@@ -31,7 +32,7 @@ export const Container = styled.header`
       gap: 1.6rem;
 
       a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-weight: 500;
         position: relative;
         &:before {
@@ -77,7 +78,4 @@ export const Container = styled.header`
       justify-content: space-between;
     }
 
-  @media (max-width: 700px) {
-    padding: 14.5px 16px;
-  }
 `

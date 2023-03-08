@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 90%;
-  margin: 1rem auto;
+  margin: 0 auto;
 
   > section {
     display: flex;
@@ -22,7 +22,6 @@ export const Container = styled.div`
 
       > p {
         font-size: clamp(1.5rem, 5vw, 1.8rem);
-        text-align: justify;
       }
     }
 
@@ -60,46 +59,6 @@ export const Container = styled.div`
       }
     }
   }
-`
-
-export const Section = styled.section`
-  /* width: 90%;
-  margin: 6rem auto;
-
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 5rem;
-
-    h2 {
-      font-size: clamp(1.6rem, 5vw, 2.6rem);
-    }
-
-    img {
-      width: 60%;
-      height: auto;
-    }
-
-    p {
-      font-size: clamp(1.4rem, 5vw, 1.8rem);
-      text-align: justify;
-    }
-  }
-
-  @media (min-width: 426px) and (max-width: 1440px) {
-    .presentation {
-      img {
-        width: 30%;
-      }
-
-      p {
-        text-align: center;
-      }
-    }
-  } */
 `
 
 export const About = styled.div`
@@ -142,7 +101,7 @@ export const Cards = styled.div`
   margin: 6rem auto;
 
   @media (min-width: 320px) and (max-width: 425px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   }
 `
 
@@ -165,7 +124,7 @@ export const Footer = styled.footer`
       }
 
       p {
-        font-size: 2rem;
+        font-size: clamp(1.4rem, 5vw, 2rem);
         font-weight: 600;
       }
     }
@@ -175,7 +134,7 @@ export const Footer = styled.footer`
       gap: 1.6rem;
 
       a {
-        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 5vw, 1.8rem);
         font-weight: 500;
         position: relative;
         &:before {
@@ -198,6 +157,12 @@ export const Footer = styled.footer`
     }
     > svg {
       cursor: pointer;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 425px){
+    > section {
+      flex-direction: column;
     }
   }
 `

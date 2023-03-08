@@ -15,6 +15,8 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
+  background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
@@ -24,7 +26,7 @@ export const Container = styled.section`
 
   > svg{
     position: absolute;
-    top: 1.5rem;
+    top: 3.5rem;
     right: 1.2rem;
     transform: rotate(45deg);
     transition: .7s;
@@ -36,6 +38,10 @@ export const Container = styled.section`
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  a {
+    z-index: 10;
   }
 
   ${({isVisible}) => isVisible && css`

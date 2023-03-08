@@ -13,7 +13,6 @@ export function Card({
   classLevel,
   level,
 }) {
-  const imgRound = 'https://source.unsplash.com/random/?city,night'
 
   return (
     <Container>

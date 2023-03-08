@@ -1,14 +1,13 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-import { Header } from "../../components/Header";
-import { NavBar } from "../../components/Navbar";
-import { Card } from "../../components/Card";
-import {Container, Cards} from './styles'
-export function Projects(){
-
+import { Header } from '../../components/Header'
+import { NavBar } from '../../components/Navbar'
+import { Card } from '../../components/Card'
+import { Container, Cards } from './styles'
+export function Projects() {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
 
-  return(
+  return (
     <>
       <NavBar
         menuIsVisible={menuIsVisible}
@@ -37,6 +36,87 @@ export function Projects(){
             techs="HTML • CSS • JavaScript"
             classLevel="medium"
             level="Intermediário"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/cVIsqTT.png"
+            nameProject="Jogo de Adivinhação"
+            description="Esse é um simples jogo de adivinhação, onde o objetivo é descobrir um número aleatório gerado pelo computador. O jogo possui uma funcionalidade de reconhecimento de voz que permite ao usuário fazer chutes por comando de voz."
+            techs="HTML • CSS • JavaScript"
+            classLevel="easy"
+            level="Iniciante"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/TP0xQjk.png"
+            nameProject="ToDo List"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="medium"
+            level="Intermediário"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
+          />
+
+          <Card
+            imgLink="https://i.imgur.com/FizMsCy.png"
+            nameProject="CountDown"
+            description="A aplicação CountDown é uma ferramenta que permite aos usuários criar e gerenciar contagens regressivas para eventos futuros. A ideia é simples: você escolhe uma data e hora específicas e a aplicação exibe uma contagem regressiva que mostra quanto tempo falta até que esse evento ocorra."
+            techs="HTML • CSS • JavaScript"
+            classLevel="hard"
+            level="Profissional"
           />
 
           <Card
